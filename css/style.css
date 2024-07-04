@@ -1,0 +1,193 @@
+:root {
+  --primary: #005d4f;
+  --bg: #eee7dd;
+  -bg2: #f4f2ec;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--bg);
+  color: var(--primary);
+}
+.navbar {
+  display: flex;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 30px;
+  background: rgba(244, 242, 236, 0.9);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  margin-top: 2rem;
+  justify-content: space-around;
+  font-weight: 500;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 22;
+}
+.navbar a {
+  color: #444;
+}
+.home {
+  min-height: 100vh;
+  padding: 7rem 20%;
+}
+.home h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #ccc;
+}
+.profile img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  position: relative;
+  margin: 1rem;
+  border-radius: 40px;
+  /* border: 1px solid #ccc; */
+}
+.profile h2 {
+  font-size: 1rem;
+  margin-top: 1.3rem;
+}
+.profile p {
+  font-size: 0.9rem;
+  /* line-height: 1; */
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.daftarisi {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  background: var(--bg2);
+}
+.daftarisi h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.daftarisi a {
+  color: var(--primary);
+  font-weight: 400;
+  padding-bottom: 0.6rem;
+}
+.daftarisi a:hover {
+  text-decoration: underline;
+}
+.content {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.prolog p,
+.content p,
+.skill p,
+.sumber p {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.prolog p span,
+.content p span,
+.skill p span,
+.sumber p span {
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+.teknik,
+.skill {
+  margin-top: 2rem;
+}
+.teknik h2,
+.skill h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.teknik-img,
+.skill-img {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.teknik-img img,
+.skill-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.teknik h3,
+.skill h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+.sumber {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+}
+.sumber a {
+  color: var(--primary);
+  font-weight: 300;
+  padding: 0.6rem 0 0.6rem 0;
+}
+.sumber a:hover {
+  text-decoration: underline;
+}
+footer {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  background-color: #007664;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+footer .socials {
+  padding: 1rem 0;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+footer .socials a {
+  color: #fff;
+}
+footer .socials a:hover {
+  color: var(--bg);
+}
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+footer .links a:hover {
+  color: var(--bg);
+}
+footer .credit {
+  color: var(
+    --bg
+  ); /* Replace #yourTextColor with the color you want for the text */
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
